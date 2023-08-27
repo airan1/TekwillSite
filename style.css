@@ -17,9 +17,6 @@ body{
     max-width: 1440px;
 }
 
-.header{
-    height: 500px; 
-}
 
 .nav{
     display: flex;
@@ -57,14 +54,14 @@ body{
 
 
 .main_content{
-    position: absolute;
-    margin-top: 250px;
-    margin-left: 350px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: -280px;
+    
 
 }
 
 .maintext{
-    justify-content: center;
     text-align: center;
     font-weight: 700;
     font-size:58px ;
@@ -75,6 +72,19 @@ body{
     text-align: center;
     font-size: 20px;
     font-weight: 500;
+}
+.buttonquote, .buttonquote2{
+    color: antiquewhite;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid;
+    padding: 10px 25px 10px 25px;
+    border-radius: 37px;
+    /* padding-left: 25px; Отступ слева
+    padding-right: 25px; */
+    margin: -10px;
+    transition: 0.2s;
 }
 
 .buttonquote{
@@ -89,7 +99,7 @@ body{
     border-color: #FFA62B;;
     padding-left: 25px; /* Отступ слева */
     padding-right: 25px;
-    margin-left: 95px;
+    margin-left: 20px;
     transition: 0.2s;
 }
 
