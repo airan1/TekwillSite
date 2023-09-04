@@ -24,12 +24,11 @@
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
+        
 }
+
 .containerglav{
     background-image: url(img/cover.jpg);
-    @media screen and(max-width:768px;) {
-        
-    }
 
 }
 body{
@@ -329,4 +328,78 @@ ul li{
 
 .footer_divider{
     border: 1px solid #364067;
+}
+
+
+.review_cubes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.stars{
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.mainproblems{
+    color: gray;
+    font-size: 14px;
+}
+
+.namereview{
+    color:#FFA62B;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap; 
+    margin-bottom: 0 auto;   
+}
+
+.name_review{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.carrierreview{
+    font-size: 14px;
+    margin-left: 10px;
+    
+    
+}
+
+.designer{
+    color: black;
+    font-size: 13px;
+    margin-top: -9px;
+}
+
+.review_one{
+    display: grid;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main_review{
+    text-align: center;
+    padding: 0;
+}
+
+.clientsay{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.main_people{
+    font-size: 14px;
+    margin-bottom:40px ;
 }
