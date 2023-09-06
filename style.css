@@ -1,25 +1,16 @@
 
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(48, 49, 70); 
+    /*margin: 70px;*/
+    margin-top: 0;
+    color: white;
+}
+
 .logo{
         font-size: 14px;
     }
-.nav_bar{
-        margin-top: 400px;
-}
-
-.basic_section {
-    
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.9;
-}
-
-.headerline{  
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
 .conteiner{
     width: 100%;
     max-width: 950px;
@@ -28,9 +19,13 @@
 }
 
 .containerglav{
-    background-image: url(img/cover.jpg);
-
+    background-image: url(img/cover.jpg) ;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(48, 49, 70); 
@@ -66,7 +61,7 @@ body{
 }
 
 .nav_bar li{
-        margin: 5px;
+        margin: -5px;
 }
 
 .nav_bar a:hover{
@@ -92,12 +87,12 @@ body{
     margin: 0;
 }
 
-.maintext2{
+.maintext_act{
     text-align: center;
     font-size: 20px;
     font-weight: 500;
 }
-.buttonquote, .buttonquote2{
+.buttonquote, .buttonquote_learn{
     color: antiquewhite;
     font-size: 14px;
     text-decoration: none;
@@ -127,7 +122,7 @@ body{
     transition: 0.2s;
 }
 
-.buttonquote2{
+.buttonquote_learn{
     color: antiquewhite;
     font-size: 14px;
     text-decoration: none;
@@ -141,7 +136,7 @@ body{
     transition: 0.2s;
 }
 
-.buttonquote2:hover{
+.buttonquote_learn:hover{
     color: black;
     background-color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
@@ -160,8 +155,8 @@ svg{
 
 /* 2 часть */
 
-.main_content2{
-    margin-top: 120px;
+.main_content_choose{
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -171,7 +166,7 @@ svg{
     margin-bottom: auto;
 }
 
-.context2{
+.context_two{
     font-size:14px;
     font-weight: 500;
 }
@@ -184,15 +179,15 @@ svg{
   border-color: antiquewhite;
 }
 
-.cont1,.cont2,.cont3,.cont4,.cont5,.cont6{
+.cont_u{
     border: 1px solid;
     background-color: rgb(255, 255, 255);
     color: black;
     text-align: center;
+    padding: 5px;
 }
 
-.context1p,.context2p,.context3p,.context4p,
-.context5p,.context6p{
+.contextp{
     color: gray;
     font-weight: 200;
     font-size: 14px;
@@ -203,12 +198,11 @@ svg{
 }
 
 
-.imgcont1, .imgcont2,.imgcont3,.imgcont4,.imgcont5,
-.imgcont6{
+.imgcont_one{
     display: flex;
     position: absolute;
     margin: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     width: auto;
 
 }
@@ -401,5 +395,90 @@ ul li{
 
 .main_people{
     font-size: 14px;
-    margin-bottom:40px ;
+    margin-bottom:50px;
+    padding: 0;
 }
+.team_sostav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.leader{
+    display: grid;
+    background-color: white;
+}
+
+.womenwhite{
+    width: 295px;
+    height: 200px;
+}
+.leader_name{
+    color: black;
+}
+
+.leader_characters{
+    text-align: center;
+    
+}
+
+.carrier_name{
+    color: gray;
+    font-size: 14px;
+}
+
+.socials_leaders{
+    padding-bottom: 20px;
+}
+
+.social_wh{
+    width: 20px;
+    height: 20px;
+}
+
+.meetteam{
+    margin: 60px;
+    text-align: center;
+}
+
+.meteam{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.video{
+    text-align: center;
+}
+
+.main_video{
+    text-align: center;
+}
+
+
+.button_ter{
+    position: absolute;
+    margin-left:400px;
+    margin-top: 200px;
+    border:1px solid #16697A;
+    background-color: #16697A;
+    border-radius: 32px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button_ter:hover{
+    color: #000000;
+}
+.main_video{
+    margin-bottom: 50px;
+}
+.best_business{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
