@@ -81,4 +81,25 @@ const countryName = countryCodeName(countryCode);
 console.log(`Код  ${countryCode} является страной ${countryName}.`);
 
 
-// К сожалению пока не докончил ДЗ
+// продолжение
+
+function TellFortune(N, Z, Y, X) {
+  console.log(`You will be ${X}  in ${Y}, and will get married to ${Z} with ${N} kids`);
+}
+
+TellFortune(2, 'Катя', 'Лондон', 'Айтишник');
+TellFortune(3, 'Виталик', 'Лиссабон', 'Психолог');
+TellFortune(1, 'Денис', 'Кишинев', 'учитель');
+
+// Калькулятор возраст щенка
+
+function CalculatedDogAge(humanAge){
+    var dogYear = humanAge * 7;
+
+    console.log(`Вашей собачке ${dogYear} лет в собачьих годах!`);
+}
+
+CalculatedDogAge(5);
+CalculatedDogAge(8);
+CalculatedDogAge(4);
+
