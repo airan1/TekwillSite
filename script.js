@@ -174,8 +174,7 @@ var filteredMonths = months.filter(month => month.length >= 5);
 
 console.log(filteredMonths);
 
-// var monthsSliceFive = filteredMonths.slice(0);
-
 var monthsSortedFive = filteredMonths.sort();
+
 
 console.log(monthsSortedFive);
