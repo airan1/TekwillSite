@@ -212,24 +212,18 @@ function concatenateObject(objs){
   function flippText(inputStringNew){
     let result ='';
     let i = inputStringNew.length - 1; 
-
     do {
-
       result += inputStringNew[i];
       i--;
-
     } while (i >= 0);
     return result;
-
   }
-
-
     const inputStringNew  = 'This Work';
     const reversed = flippText(inputStringNew);
 
     console.log(reversed);
 
-    // 7 задание (7 задание было сложное, пришлось использовать ChatGPT)
+    // 7 задание 
 
     function objPalindrome(str) {
       str = str.replace(/\s/g, '').toLowerCase();
@@ -242,5 +236,7 @@ function concatenateObject(objs){
 
     const resultUs = objPalindrome(input);
     
-    console.log(resultUs); // Выведет "true"
+    console.log(resultUs); 
     
+
+  
