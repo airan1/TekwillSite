@@ -239,4 +239,55 @@ function concatenateObject(objs){
     console.log(resultUs); 
     
 
+  // Lesson 20 HW
+
+  // 1 задание
+
+  const studentGrades = [
+    { name: "Anna", note: 9 },
+    { name: "Denis", note: 7 },
+    { name: "Cristian", note: 8 },
+    { name: "Daniel", note: 6 },
+    { name: "Elena", note: 10 }
+  ];
   
+  const totalNotes = studentGrades.reduce((acc, student) => acc + student.note, 0);
+  const averageNote = totalNotes / studentGrades.length;
+  
+  console.log("Средний балл учащихся:", averageNote);
+  
+  // 2 задание
+
+  const products = [
+    {name: "Tshirt", price: 50, isAvailable: true },
+    {name: "Pants", price: 80, isAvailable: false },
+    {name: "Jacket", price: 120, isAvailable: true },
+    {name: "Shirt", price: 60, isAvailable: true },
+    {name: "Skirt", price: 40, isAvailable: false }
+  ];
+  
+const availableProducts = products.filter(product => product.isAvailable);
+const availableProductNames = availableProducts.map(product => product.name);
+
+console.log(availableProductNames);
+
+// 3 задание
+const numbers = [10, 5, 8, 15, 3, 20];
+
+const maxNumber = numbers.reduce((max, currentNumber) => {
+  return (currentNumber > max) ? currentNumber : max;
+}, numbers[0]);
+
+console.log("Maximum number:", maxNumber);
+
+// 4 Задание
+
+function studentArray(students){
+  const students = [{John: [8, 7, 9]}, {Mary: [9, 9, 10]}, {Alex: [6, 8, 7]}];
+
+  const totalBall = studentBall.reduce((acc, student) => acc + student.note, 0);
+  const averageNoteNew = totalBall / studentBall.length;
+
+}
+
+console.log(averageNoteNew );
