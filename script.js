@@ -280,14 +280,26 @@ const maxNumber = numbers.reduce((max, currentNumber) => {
 
 console.log("Maximum number:", maxNumber);
 
-// 4 Задание
+// 4 Задание (при помощи GPT, потому что показалось очень сложным)
 
-function studentArray(students){
-  const students = [{John: [8, 7, 9]}, {Mary: [9, 9, 10]}, {Alex: [6, 8, 7]}];
+function calculateAverageGrades(students) {
+ 
+  const averageGrades = students.reduce((result, student) => {
+    const studentName = Object.keys(student)[0]; 
+    const grades = student[studentName]; 
+    const averageGrade = grades.reduce((sum, grade) => sum + grade, 0) / grades.length;
+    result[studentName] = averageGrade.toFixed(2); 
+    return result;
+  }, {});
 
-  const totalBall = studentBall.reduce((acc, student) => acc + student.note, 0);
-  const averageNoteNew = totalBall / studentBall.length;
+  return averageGrades;
+} 
 
-}
+const students = [
+  { John: [8, 7, 9] },
+  { Mary: [9, 9, 10] },
+  { Alex: [6, 8, 7] }
+];
 
-console.log(averageNoteNew );
+const averageGrades = calculateAverageGrades(students);
+console.log(averageGrades);
