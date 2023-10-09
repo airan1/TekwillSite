@@ -303,3 +303,68 @@ const students = [
 
 const averageGrades = calculateAverageGrades(students);
 console.log(averageGrades);
+
+
+// Homework 22
+
+// 1 задание
+
+let studentV = {
+  name: 'John',
+  lastName: 'Doe',
+  faculty: 'history',
+  year: 3
+};
+
+const extractStudentData = ({ name, lastName, faculty, year }) => {
+  return [`${name} ${lastName}`, faculty, year];
+};
+
+const resultNew = extractStudentData(studentV);
+console.log(resultNew); 
+
+// 2 задание
+
+const extractElements = ([first, , third, ...rest]) => {
+  console.log(first, third);
+};
+
+const colors = ["red", "green", "blue", "violet"];
+extractElements(colors);
+
+// 3 Задание
+
+function getArgumentsArray(...args) {
+  return args;
+}
+
+console.log(getArgumentsArray(1, 2, 3, 4, 5)); 
+
+// 4 задание
+
+function combineArrays(arr1, arr2) {
+  return [...arr1, ...arr2];
+}
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+console.log(combineArrays(array1, array2)); // [1, 2, 3, 4, 5, 6]
+
+// 5 задание
+
+function addLanguageToStudent(student, languageObj) {
+  return { ...student, ...languageObj };
+}
+
+const student = {
+  name: 'John',
+  lastName: 'Doe',
+  faculty: 'history',
+  year: 3,
+};
+const language = { language: 'en' };
+
+console.log(addLanguageToStudent(student, language));
+
+
