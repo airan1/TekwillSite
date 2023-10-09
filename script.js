@@ -305,6 +305,9 @@ const averageGrades = calculateAverageGrades(students);
 console.log(averageGrades);
 
 
+
+console.log("Homework 22")
+
 // Homework 22
 
 // 1 задание
@@ -349,7 +352,7 @@ function combineArrays(arr1, arr2) {
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 
-console.log(combineArrays(array1, array2)); // [1, 2, 3, 4, 5, 6]
+console.log(combineArrays(array1, array2)); 
 
 // 5 задание
 
@@ -368,3 +371,65 @@ const language = { language: 'en' };
 console.log(addLanguageToStudent(student, language));
 
 
+// Homework 18
+
+// 1 ex
+
+let fruits = ["apple", "banana", "orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// 2 ex
+
+const numbersnew = [1, 2, 3, 4, 5];
+
+let lastNumber = numbersnew.pop();
+
+  console.log('Последнее число которое было удалено: ' + lastNumber);
+  console.log(numbersnew);
+
+let firstNumber = numbersnew.shift();
+
+  console.log('Последнее число которое было удалено ' + firstNumber);
+  console.log(numbersnew);
+
+// 3 ex
+
+let names = ["John", "Jane", "Mikhael", "Jennifer", "Bobby"];
+let nameLengths = [];
+
+for (let i = 0; i < names.length; i++) {
+    nameLengths.push(names[i].length);
+}
+
+console.log(nameLengths);
+
+
+// 5 ex objects
+
+const person = { name: "John", имя: "Doe", возраст: 30, профессия: "developer" };
+
+function countProperties(obj) {
+    const keys = Object.keys(obj);
+    return keys.length;
+}
+
+const propertyCount = countProperties(person);
+console.log("Количество свойств в объекте person:", propertyCount);
+
+
+// 6 ex
+
+function generateNumbers(n) {
+  const numbers = [];
+  for (let i = 1; i <= n; i++) {
+      numbers.push(i);
+  }
+  return numbers;
+}
+
+const n = 5;
+const result = generateNumbers(n);
+console.log(result);
