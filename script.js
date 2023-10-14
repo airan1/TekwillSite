@@ -240,4 +240,197 @@ function concatenateObject(objs){
     console.log(resultUs); 
     
 
+  // Lesson 20 HW
+
+  // 1 задание
+
+  const studentGrades = [
+    { name: "Anna", note: 9 },
+    { name: "Denis", note: 7 },
+    { name: "Cristian", note: 8 },
+    { name: "Daniel", note: 6 },
+    { name: "Elena", note: 10 }
+  ];
   
+  const totalNotes = studentGrades.reduce((acc, student) => acc + student.note, 0);
+  const averageNote = totalNotes / studentGrades.length;
+  
+  console.log("Средний балл учащихся:", averageNote);
+  
+  // 2 задание
+
+  const products = [
+    {name: "Tshirt", price: 50, isAvailable: true },
+    {name: "Pants", price: 80, isAvailable: false },
+    {name: "Jacket", price: 120, isAvailable: true },
+    {name: "Shirt", price: 60, isAvailable: true },
+    {name: "Skirt", price: 40, isAvailable: false }
+  ];
+  
+const availableProducts = products.filter(product => product.isAvailable);
+const availableProductNames = availableProducts.map(product => product.name);
+
+console.log(availableProductNames);
+
+// 3 задание
+const numbers = [10, 5, 8, 15, 3, 20];
+
+const maxNumber = numbers.reduce((max, currentNumber) => {
+  return (currentNumber > max) ? currentNumber : max;
+}, numbers[0]);
+
+console.log("Maximum number:", maxNumber);
+
+// 4 Задание (при помощи GPT, потому что показалось очень сложным)
+
+function calculateAverageGrades(students) {
+ 
+  const averageGrades = students.reduce((result, student) => {
+    const studentName = Object.keys(student)[0]; 
+    const grades = student[studentName]; 
+    const averageGrade = grades.reduce((sum, grade) => sum + grade, 0) / grades.length;
+    result[studentName] = averageGrade.toFixed(2); 
+    return result;
+  }, {});
+
+  return averageGrades;
+} 
+
+const students = [
+  { John: [8, 7, 9] },
+  { Mary: [9, 9, 10] },
+  { Alex: [6, 8, 7] }
+];
+
+const averageGrades = calculateAverageGrades(students);
+console.log(averageGrades);
+
+
+
+console.log("Homework 22")
+
+// Homework 22
+
+// 1 задание
+
+let studentV = {
+  name: 'John',
+  lastName: 'Doe',
+  faculty: 'history',
+  year: 3
+};
+
+const extractStudentData = ({ name, lastName, faculty, year }) => {
+  return [`${name} ${lastName}`, faculty, year];
+};
+
+const resultNew = extractStudentData(studentV);
+console.log(resultNew); 
+
+// 2 задание
+
+const extractElements = ([first, , third, ...rest]) => {
+  console.log(first, third);
+};
+
+const colors = ["red", "green", "blue", "violet"];
+extractElements(colors);
+
+// 3 Задание
+
+function getArgumentsArray(...args) {
+  return args;
+}
+
+console.log(getArgumentsArray(1, 2, 3, 4, 5)); 
+
+// 4 задание
+
+function combineArrays(arr1, arr2) {
+  return [...arr1, ...arr2];
+}
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+console.log(combineArrays(array1, array2)); 
+
+// 5 задание
+
+function addLanguageToStudent(student, languageObj) {
+  return { ...student, ...languageObj };
+}
+
+const student = {
+  name: 'John',
+  lastName: 'Doe',
+  faculty: 'history',
+  year: 3,
+};
+const language = { language: 'en' };
+
+console.log(addLanguageToStudent(student, language));
+
+
+// Homework 18
+
+// 1 ex
+
+let fruits = ["apple", "banana", "orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// 2 ex
+
+const numbersnew = [1, 2, 3, 4, 5];
+
+let lastNumber = numbersnew.pop();
+
+  console.log('Последнее число которое было удалено: ' + lastNumber);
+  console.log(numbersnew);
+
+let firstNumber = numbersnew.shift();
+
+  console.log('Последнее число которое было удалено ' + firstNumber);
+  console.log(numbersnew);
+
+// 3 ex
+
+let names = ["John", "Jane", "Mikhael", "Jennifer", "Bobby"];
+let nameLengths = [];
+
+for (let i = 0; i < names.length; i++) {
+    nameLengths.push(names[i].length);
+}
+
+console.log(nameLengths);
+
+
+// 5 ex objects
+
+const person = { name: "John", имя: "Doe", возраст: 30, профессия: "developer" };
+
+function countProperties(obj) {
+    const keys = Object.keys(obj);
+    return keys.length;
+}
+
+const propertyCount = countProperties(person);
+console.log("Количество свойств в объекте person:", propertyCount);
+
+
+// 6 ex
+
+function generateNumbers(n) {
+  const numbers = [];
+  for (let i = 1; i <= n; i++) {
+      numbers.push(i);
+  }
+  return numbers;
+}
+
+const n = 5;
+const result = generateNumbers(n);
+console.log(result);
