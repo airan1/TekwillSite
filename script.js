@@ -158,28 +158,29 @@ function concatenateObject(objs){
 
   function countVowels(str) {
     str = str.toLowerCase();
-  
+    
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
     let count = 0; 
     let i = 0; 
-  
+    
     while (i < str.length) {
       const char = str[i];
-  
- 
-      if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+    
+      if (vowels.includes(char)) {
         count++; 
       }
-  
+    
       i++; 
     }
-  
+    
     return count; 
   }
   
   const inputString = "Hello, this is my homework 19";
   const vowelCount = countVowels(inputString);
   
-  console.log(vowelCount); 
+  console.log(vowelCount);
+  
   
   // 5 Задание
 
