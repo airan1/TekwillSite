@@ -103,3 +103,141 @@ CalculatedDogAge(5);
 CalculatedDogAge(8);
 CalculatedDogAge(4);
 
+// Домашнаяя работа Nr.19
+
+function displayObjectProperties(obj){
+    for (const key in obj){
+      console.log(`${key}: ${obj[key]}`);
+    }
+}
+const myObjekt = {name:'John', age:30, city: 'New-York'};
+displayObjectProperties(myObjekt);
+
+// 2 Задание
+
+function keyMyProject(object, keyNewCheck){
+    for (const key in object){
+        if(key === keyNewCheck){
+          return true;
+        }
+      return false;
+    }
+
+
+    const myNewObject = {name: 'John', age: 30, city: 'New-York'} 
+    const keyToCheck = 'age';
+
+    const result = keyMyProject(myNewObject, keyNewCheck);
+    console.log(result);
+}
+
+
+// 3 Задание
+
+function concatenateObject(objs){
+  let resultone = '';
+
+  const values = Object.values(objs);
+
+  let i=0;
+  do{
+    resultone +=values[i];
+    i++;
+  } while (i < values.length);
+
+  return resultone;
+
+}
+
+  const myObject = { prop1: 'Hello', prop2: 'World', prop3: '!' };
+  const concatenatedValue = concatenateObject(myObject);
+
+  console.log(concatenatedValue);
+
+  // 4 задание
+
+  function countVowels(str) {
+    str = str.toLowerCase();
+    
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0; 
+    let i = 0; 
+    
+    while (i < str.length) {
+      const char = str[i];
+    
+      if (vowels.includes(char)) {
+        count++; 
+      }
+    
+      i++; 
+    }
+    
+    return count; 
+  }
+  
+  const inputString = "Hello, this is my homework 19";
+  const vowelCount = countVowels(inputString);
+  
+  console.log(vowelCount);
+  
+  
+  // 5 Задание
+
+  function calculateResultNotes(students) {
+    const result = {}; 
+  
+    for (const student in students) {
+
+      const grades = students[student];
+      const sum = grades.reduce((acc, grade) => acc + grade, 0);
+      const average = sum / grades.length;
+  
+      result[student] = `medium: ${average.toFixed(2)}`;
+    }
+  
+    return result;
+  }
+  
+  const grades = {
+    John: [8, 7, 9],
+    Mary: [9, 9, 10],
+    Alex: [6, 8, 7],
+  };
+  
+  const result = calculateResultNotes(grades);
+  console.log(result);
+  
+  //6 задание
+
+  function flippText(inputStringNew){
+    let result ='';
+    let i = inputStringNew.length - 1; 
+    do {
+      result += inputStringNew[i];
+      i--;
+    } while (i >= 0);
+    return result;
+  }
+    const inputStringNew  = 'This Work';
+    const reversed = flippText(inputStringNew);
+
+    console.log(reversed);
+
+    // 7 задание 
+
+    function objPalindrome(str) {
+      str = str.replace(/\s/g, '').toLowerCase();
+    
+      const reversedStr = str.split('').reverse().join('');
+      
+      return str === reversedStr;
+    }
+        const input = "level";
+
+    const resultUs = objPalindrome(input);
+    
+    console.log(resultUs); 
+    
+
+  
