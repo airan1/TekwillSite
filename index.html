@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="script.js"></script>
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>  
@@ -234,42 +235,61 @@
     </div>
 </section>
 <section class="feedback">
-    <div class="feedback_service">   
+ <div class="container">
+    
+        <div class="feedback_service_input">   
          <div class="feedback_input">
             <div class="contactus">
                 <p class="contact">Contact Us</p>
                 <h1 class="appointment">Make an Appointment</h2>
             </div>
-            <div class="input_style">
+        <form class="feedback_service_form">
             <div class="input_contact">
-                <input class="fulname" type="text" placeholder="Full Name">
-                <input class="eminput" type="email" placeholder="example@gmail.com"><br>
-                <select class="country" id="select" name="select">
-                    <option value="UK">Please select</option>
-                    <option value="Germany">Please select</option>
-                    <option value="Moldova">Please select</option>
-                    <option value="Poland">Please select</option>
-                    <option value="Portugal">Please select</option>
-                </select>
-                <select class="time" id="time" name="time">
-                    <option value="4:00">4:00</option>
-                    <option value="5:00">5:00</option>
-                    <option value="10;00">10:00</option>
-                    <option value="15:00">15:00</option>
-                    <option value="20:00">20:00</option>
-                </select><br>
-                <textarea class="textarea" placeholder="Message"></textarea>
-                <div class="book_point"><a href="#"><p class="book">Book Appointment</p></a>
-              </div>
-              
+                <div class="grid_content_input">
+                <input class="fulname" id="input_contact_fullname" type="text" placeholder="Full Name">
+                <p class="textfullname" id="input_contact_textfullname">     
+                </p>
             </div>
-            
-        </div>
+                <div class="grid_content_input">
+                     <input class="eminput" id="input_contact_email" type="email" placeholder="example@gmail.com">
+                    <p class="input_email_form" id="input_contact_fullemail"></p>
+                </div>
+                <div class="grid_content_input">
+                    <select class="country" id="select_day_form" name="select">
+                        <option value="select" disabled selected hidden>Please Select </option>
+                        <option value="monday">Monday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="friday">Friday</option>
+                    </select>
+                    <p class="select_day_full" id="select_day_fullform"></p>
+                </div>
+                <div class="grid_content_input">
+                    <select class="time" id="input_time_contact" name="time">
+                        <option value="selected" disabled selected hidden>Please Select</option>
+                        <option value="4:00">4:00</option>
+                        <option value="5:00">5:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                    <p class="input_fulltime" id="input_fulltime_contact"></p>
+                 </div>
+                 <div class="grid_content_textarea">
+                        <textarea class="textarea" id="input_textarea" placeholder="Message" style="width: 500px; height: 100px;"></textarea>
+                        <p class="textarea_full_name" id="input_fulltextarea_contact"></p>
+                 </div>
+                        <input class="book" type="submit" value="Book Appointment">
+                </div>
+                
+  </form>         
+            <!--  -->
         
         </div>
         <div class="img_cover">
             <img class="img_cover" src="img/druzya.png">
         </div>
+
+    </div>
 
     </div>
 </section>
